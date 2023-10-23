@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8b400;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    background-color:  #ffd700;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+
+.animatedText {
+    font-size: 36px;
+    animation: pulse 2s infinite;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.poem {
+    text-align: center;
+    padding: 50px 0;
+    background-color: bisque;
+}
+.contact {
+    text-align: center;
+    padding: 50px 0;
+    background-color: aqua;
+}
+
+footer {
+    background-color: #f8b400;
+    text-align: center;
+    padding: 3px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.imagebox img {
+    height: 9.5rem;
+    width: 12.5rem;
+    border-radius: 50%;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.balloon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.balloon {
+    width: 20px;
+    height: 30px;
+    background-color: bisque;
+    border-radius: 50% 50% 50% 0;
+    position: relative;
+    margin: 0 5px;
+    animation: balloon-float 2s ease-in-out infinite;
+}
+
+@keyframes balloon-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
